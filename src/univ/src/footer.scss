@@ -1,0 +1,38 @@
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #7777ff;
+	padding: 30px 20px;
+	.navigation {
+		min-width: max-content;
+		display: flex;
+		h1 {
+			writing-mode: vertical-rl;
+			border-right: 4px solid #aaaaff;
+			margin-top: 20px;
+			font-size: 30px;
+		}
+		ul {
+			padding-top: 30px;
+			list-style: none;
+			padding-left: 0px;
+		}
+		li {
+			margin-bottom: 20px;
+			color: black;
+		}
+	}
+	footer .author {
+		display: flex;
+		align-items: center;
+		margin-top: auto;
+		img {
+			height: 120px;
+			width: 120px;
+			display: block;
+			margin-right: 20px;
+		}
+	}
+}

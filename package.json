@@ -1,6 +1,28 @@
 {
+  "name": "homepage",
+  "version": "1.0.0",
+  "exports": "./gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "del": "^7.1.0",
     "gulp": "^5.0.0",
-    "gulp-file-include": "^2.3.0"
+    "gulp-ejs": "^5.1.0",
+    "gulp-image": "^6.3.1",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "sass": "^1.77.6"
   }
 }

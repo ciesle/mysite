@@ -304,25 +304,7 @@
       </div>
     </aside>
   </div>
-  <footer>
-    <div class="navigation">
-      <h1>INDEX</h1>
-      <ul>
-        <a href="profile/index.html"><li>プロフィール</li></a>
-        <a href="tech/index.html"><li>技術記事</li></a>
-        <a href="univ/index.html"><li>大学生活</li></a>
-        <a href="zakki/index.html"><li>雑記</li></a>
-        <a href="links/index.html"><li>リンク集</li></a>
-      </ul>
-    </div>
-    <div class="author">
-      <img src="../img/icon.jpg">
-      <div>
-        <p>Copyright(c) 2024-: ciesle</p>
-        <p>email: ciesle.dev@gmail.com</p>
-      </div>
-    </div>
-  </footer>
+  <%- include("../../common/_footer.ejs", { depth:2 }); %>
 </body>
 
 </html>

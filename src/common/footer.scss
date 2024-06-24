@@ -1,4 +1,4 @@
-footer {
+@mixin footer {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -18,13 +18,13 @@ footer {
 			padding-top: 30px;
 			list-style: none;
 			padding-left: 0px;
-		}
-		li {
-			margin-bottom: 20px;
-			color: black;
+			li {
+				margin-bottom: 20px;
+				color: black;
+			}
 		}
 	}
-	footer .author {
+	.author {
 		display: flex;
 		align-items: center;
 		margin-top: auto;

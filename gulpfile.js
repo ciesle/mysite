@@ -42,13 +42,16 @@ const copyTask = (done) => {
 	gulp
 		.src(["./src/**/*{.png,jpg}"], {encoding:false})
 		.pipe(gulp.dest("./build"));
+	gulp
+		.src(["./src/**/*.*", "!./src/**/*{.png,jpg}", "!./src/**/*.ejs", "!./src/**/*.scss"])
+		.pipe(gulp.dest("./build"));
 	done();
 };
 
-const watchTask= (done) => {
+const watchTask = (done) => {
 	gulp.watch("./src/**/*.scss", sassTask);
 	gulp.watch("./src/**/*.ejs", ejsTask);
-	gulp.watch("./src/**/*{.png,jpg}", copyTask);
+	gulp.watch(["./src/**/*.*", "!./src/**/*{.png,jpg}", "!./src/**/*.ejs", "!./src/**/*.scss"], copyTask);
 };
 
 

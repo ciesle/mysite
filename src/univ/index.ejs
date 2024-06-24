@@ -5,11 +5,11 @@
   <title>薊畑</title>
   <meta charset="utf8">
   <link href="src/style.css" rel="stylesheet">
+  <script src="./src/main.js" defer></script>
 </head>
 
 <body>
-  <input id="drawer-input" class="drawer-hidden" type="checkbox">
-  <%- include("_header.ejs") %>
+  <%- include("common/_header.ejs") %>
   <div class="main-container">
     <main>
       <section class="new-article">
@@ -25,23 +25,25 @@
         </ol>
       </section>
     </main>
-    <aside>
-      <div class="other-sites">
-        <h1>関係サイト</h1>
-        <ul>
-          <li>
-            <div class="site-container">
-              <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element">
-                <h1>mozilla</h1>
-              </a>
-              <p>html document</p>
-            </div>
-          </li>
-        </ul>
-      </div>
+    <aside class="other-sites">
+      <h1>関係サイト</h1>
+      <ul>
+        <li>
+          <%- include("./common/_related.ejs", 
+              {link:"https://www.minkou.jp/university/school/review/20180/433/gk=17403/",
+              title: "みんなの大学情報",
+              text: "計数工学科の口コミ"}); %>
+        </li>
+        <li>
+          <%- include("./common/_related.ejs", 
+              {link:"https://www.minkou.jp/university/school/review/20180/433/gk=17403/",
+              title: "みんなの大学情報",
+              text: "計数工学科の口コミ"}); %>
+        </li>
+      </ul>
     </aside>
   </div>
-  <%- include("../common/_footer.ejs", { depth:1 }); %>>
+  <%- include("../common/_footer.ejs", { depth:1 }); %>
 </body>
 
 </html>

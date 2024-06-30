@@ -6,10 +6,11 @@
   <meta charset="utf8">
   <link href="src/style.css" rel="stylesheet">
   <script src="./src/main.js" defer></script>
+  <link href="../common/footer.css" rel="stylesheet">
 </head>
 
 <body>
-  <%- include("common/_header.ejs") %>
+  <%- include("common/_header.ejs", {depth:1}) %>
   <div class="main-container">
     <main>
       <section class="new-article">

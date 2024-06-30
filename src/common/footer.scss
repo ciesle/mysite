@@ -1,4 +1,4 @@
-@mixin footer {
+footer {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -18,9 +18,20 @@
 			padding-top: 30px;
 			list-style: none;
 			padding-left: 0px;
-			li {
-				margin-bottom: 20px;
+			a {
+				text-decoration: none;
 				color: black;
+				li {
+					margin-bottom: 0.5em;
+					margin-right: 2em;
+					border-radius: 10px;
+					padding: 0.5em 1em;
+					box-shadow: #7272ff 0.2em 0.2em 0.1em;
+					&:hover {
+						transition: 0.6s;
+						background-color: #6666ff;
+					}
+				}
 			}
 		}
 	}

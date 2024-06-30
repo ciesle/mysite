@@ -9,6 +9,8 @@ import rename from "gulp-rename";
 import sassGlob from "gulp-sass-glob";
 import postcss from "gulp-postcss";
 import autoprefixer from "autoprefixer";
+import browserSync from "browser-sync";
+
 
 const ejsTask = (done) => {
 	gulp
@@ -47,6 +49,7 @@ const copyTask = (done) => {
 		.pipe(gulp.dest("./build"));
 	done();
 };
+
 
 const watchTask = (done) => {
 	gulp.watch("./src/**/*.scss", sassTask);

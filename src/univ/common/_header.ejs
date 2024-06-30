@@ -1,6 +1,8 @@
+<% if (typeof depth === "undefined") { let depth = 0;} %>
+
 <header>
   <div class="blog-title">
-    <h2><a href="../top/index.html">薊畑</a></h2>
+    <h2><a href="<%- "../".repeat(depth) %>index.html">薊畑</a></h2>
     <h1>大学記事</h1>
   </div>
   <div class="hamburger"><span></span><span></span><span></span></div>

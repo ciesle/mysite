@@ -121,6 +121,7 @@ header {
 		flex-grow: 1;
 
 		.blog-content {
+			margin-bottom: 10%;
 			h1 {
 				border-bottom: solid 4px #7777ff;
 			}
@@ -146,6 +147,17 @@ header {
 				display: block;
 				border-left: 4px solid gray;
 				padding-left: 10px;
+			}
+
+			.rainbow {
+				background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+				background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+				background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+				background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+				-webkit-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+				text-fill-color: transparent;
 			}
 		}
 
@@ -278,9 +290,4 @@ header {
 			}
 		}
 	}
-}
-
-@import "../../common/footer.scss";
-footer {
-	@include footer;
 }

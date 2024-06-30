@@ -10,3 +10,5 @@ function toggleHamburger() {
 	}
 }
 hamburger.onclick = toggleHamburger;
+
+setInterval(() => { location.reload(); }, 5000);

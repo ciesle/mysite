@@ -1,0 +1,31 @@
+<% if (typeof depth === "undefined") { let depth = 0;} %>
+
+<footer>
+  <div class="navigation">
+    <h1>INDEX</h1>
+    <ul>
+      <a href="<%= "../".repeat(depth) %>profile/index.html">
+        <li>プロフィール</li>
+      </a>
+      <a href="<%= "../".repeat(depth) %>tech/index.html">
+        <li>技術記事</li>
+      </a>
+      <a href="<%= "../".repeat(depth) %>univ/index.html">
+        <li>大学生活</li>
+      </a>
+      <a href="<%= "../".repeat(depth) %>zakki/index.html">
+        <li>雑記</li>
+      </a>
+      <a href="<%= "../".repeat(depth) %>links/index.html">
+        <li>リンク集</li>
+      </a>
+    </ul>
+  </div>
+  <div class="author">
+    <img src="<%= "../".repeat(depth) %>img/icon.jpg">
+    <div>
+      <p>Copyright(c) 2024-: ciesle</p>
+      <p>email: ciesle.dev@gmail.com</p>
+    </div>
+  </div>
+</footer>

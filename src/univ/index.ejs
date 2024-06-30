@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>薊畑</title>
+  <meta charset="utf8">
+  <link href="src/style.css" rel="stylesheet">
+  <script src="./src/main.js" defer></script>
+  <link href="../common/footer.css" rel="stylesheet">
+</head>
+
+<body>
+  <%- include("common/_header.ejs", {depth:1}) %>
+  <div class="main-container">
+    <main>
+      <section class="new-article">
+        <h1>新着記事</h1>
+        <ol>
+          <li>
+            <div class="article-container">
+              <h1><a href="contents/keisu-class-2a.html">計数工学科の授業 2Aセメ編</a></h1>
+              <p>私が 2A セメスターに計数工学科で受けた授業の簡単な紹介です。<br>
+                まだコースが分かれていないので、システム・数理で同じ内容だと思います。</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <aside class="other-sites">
+      <h1>関係サイト</h1>
+      <ul>
+        <li>
+          <%- include("./common/_related.ejs", 
+              {link:"https://www.minkou.jp/university/school/review/20180/433/gk=17403/",
+              title: "みんなの大学情報",
+              text: "計数工学科の口コミ"}); %>
+        </li>
+        <li>
+          <%- include("./common/_related.ejs", 
+              {link:"https://www.minkou.jp/university/school/review/20180/433/gk=17403/",
+              title: "みんなの大学情報",
+              text: "計数工学科の口コミ"}); %>
+        </li>
+      </ul>
+    </aside>
+  </div>
+  <%- include("../common/_footer.ejs", { depth:1 }); %>
+</body>
+
+</html>

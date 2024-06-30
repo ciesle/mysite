@@ -1,3 +1,5 @@
 *.tmp
 *.env
-nginx/*
+/nginx
+/node_modules
+/build
